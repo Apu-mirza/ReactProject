@@ -1,9 +1,9 @@
 
 import './App.css'
+import Clock from './components/Clock'
+function App() {
 
-// function App() {
+    return <div><Clock locale="bn-BD"/></div>
+}
 
-//     return <div>Hello World</div>
-// }
-
-export default App
+export default App;

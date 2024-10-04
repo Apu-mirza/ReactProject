@@ -1,20 +1,13 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.css'
 
-import ReactDOM from 'react-dom';
-import React from "react";
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
 
-const index = 0;
 
-class Clock extends React.Component{
-
-  render(){
-
-      return (
-      <h1 className="heading" tabIndex={index}>
-        <span className="text">Hello World {this.props.children} {new Date().toLocaleTimeString(this.props.locale)}</span>
-      </h1>
-    )
-  }
-  
-}
-  ReactDOM.render(<Clock locale="bn-BD">test</Clock>, document.getElementById('root'));
-
+reportWebVitals();
